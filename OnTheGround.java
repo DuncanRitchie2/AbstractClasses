@@ -1,4 +1,4 @@
 package AbstractClasses;
 
-public interface OnTheGround {
+public interface OnTheGround extends Exists {
 }

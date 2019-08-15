@@ -1,9 +1,9 @@
 package AbstractClasses;
 
-public interface Interface {
+public interface Animal extends Exists {
     String hello = "Hello world!";
-    int speak();
-    int move();
-    int feed();
+    void speak();
+    void move();
+    void feed();
 
 }

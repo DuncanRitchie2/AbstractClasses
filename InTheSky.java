@@ -1,4 +1,4 @@
 package AbstractClasses;
 
-public interface InTheSky {
+public interface InTheSky extends Exists {
 }

@@ -1,4 +1,4 @@
 package AbstractClasses;
 
-public class InTheSea {
+public interface InTheSea extends Exists {
 }
