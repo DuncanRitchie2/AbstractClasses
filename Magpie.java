@@ -11,6 +11,7 @@ public class Magpie extends Bird implements InTheSky {
     public void move() {
         double rand = Math.random();
         System.out.println("I'm "+(rand>0.5 ? "fly" : "hopp")+"ing!");
+        fly();
     }
     public void feed() {
         System.out.println("I'm an opportunistic omnivorous scavenger!");

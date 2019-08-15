@@ -10,7 +10,7 @@ public class Main {
 
     public static void select() {
         Scanner myScanner = new Scanner(System.in);
-        System.out.println("\nPlease type in the animal you want out of magpie, kestrel, hammerhead.");
+        System.out.println("\nPlease type an animal out of hammerhead, kestrel, magpie, octopus, porpoise.");
         String choice = myScanner.nextLine();
         System.out.println("You selected a " + choice + ".");
         createAnimal(choice);
@@ -38,8 +38,21 @@ public class Main {
                 kestrel.feed();
                 kestrel.speak();
                 break;
+            case "porpoise":
+                Porpoise porpoise = new Porpoise();
+                porpoise.move();
+                porpoise.feed();
+                porpoise.speak();
+                break;
+            case "octopus":
+                Octopus octopus = new Octopus();
+                octopus.move();
+                octopus.feed();
+                octopus.speak();
+                octopus.swim();
+                break;
             default:
-                System.out.println("That's not a magpie, kestrel, or hammerhead.");
+                System.out.println("That's not one of the possible animals.");
         }
         select();
     }
