@@ -1,11 +1,12 @@
 package AbstractClasses;
 
-public class Magpie extends Bird {
+public class Magpie extends Bird implements InTheSky {
     public void speak() {
         int rand = (int)Math.floor(Math.random()*50);
-        String motif = " squawk";
         String start = "Squawk";
-        System.out.println(start+motif.repeat(rand)+"...");
+        String motif = " squawk";
+        String end = "...";
+        System.out.println(start+motif.repeat(rand)+end);
     }
     public void move() {
         double rand = Math.random();
@@ -16,5 +17,11 @@ public class Magpie extends Bird {
     }
     public void stealShinyObjects() {
         System.out.println("Oooh, shiny!");
+    }
+    public void fly() {
+        System.out.println("Flap! Glide! Soar! Land!");
+    }
+    public void walk() {
+        System.out.println("Hop hop hop hop...");
     }
 }

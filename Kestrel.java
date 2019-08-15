@@ -19,4 +19,12 @@ public class Kestrel extends BirdOfPrey {
     public void dive() {
         System.out.println("I'm diving for some food!");
     }
+
+    public void fly() {
+        System.out.println("Soaring");
+    }
+
+    public void walk() {
+        System.out.println("I'm on the ground at the moment, but I'd rather be hovering or up a tree.");
+    }
 }

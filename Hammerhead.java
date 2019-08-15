@@ -16,4 +16,7 @@ public class Hammerhead extends Shark {
         int rand = (int)Math.floor(Math.random()*diet.length);
         System.out.println("I'm eating "+diet[rand]+".");
     }
+    public void swim() {
+        System.out.println("Naana naana nana nana nana...");
+    }
 }
